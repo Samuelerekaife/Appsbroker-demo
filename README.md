@@ -64,7 +64,7 @@ sudo systemctl status apache2
 
 -Overwrite the Apache web server default web page by using the command below
 
-echo '<!doctype html><html><body><h1>HelloTeamPurple!</h1></body></html>' | sudo tee /var/www/html/index.html
+echo '<!doctype html><html><body><h1>Hello Team Purple!</h1></body></html>' | sudo tee /var/www/html/index.html
 
 4. Access the web application from browser
 - Test that your VM is serving traffic on its external IP
@@ -104,7 +104,7 @@ The application includes the following Compute Engine components:
 6. Generate test traffic somewhere else.
 7. Monitor load balancing and autoscaling.
 
-### Google Cloud Best Practices and Secure by design
+## Google Cloud Best Practices and Secure by design
 Clean Up: To avoid incurring charges to your Google Cloud account for the resources used, follow these steps to delete the VM
 
 1. In the Google Cloud console navigation menu, click Compute Engine > VM instances.
