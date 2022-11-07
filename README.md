@@ -64,7 +64,7 @@ sudo systemctl status apache2
 
 -Overwrite the Apache web server default web page by using the command below
 
-echo '<!doctype html><html><body><h1> Hello Team Purple!</h1></body></html>' | sudo tee /var/www/html/index.html
+echo '<!doctype html><html><body><h1>HelloTeamPurple!</h1></body></html>' | sudo tee /var/www/html/index.html
 
 4. Access the web application from browser
 - Test that your VM is serving traffic on its external IP
