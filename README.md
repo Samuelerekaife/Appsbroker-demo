@@ -113,6 +113,101 @@ Clean Up: To avoid incurring charges to your Google Cloud account for the resour
 3. At the top of the instance's details page, click Delete and confirm.
 
 
-## Task 2
+## Task 2 - Design Spike
+
+### Investigate 3 different ways of hosting a static content website on Google Cloud using a Google Cloud service other than Compute Engine
+
+A brief documentation to show 3 ways of hosting a static content website on Google Cloud apart from using Compute Engine.
+
+#### Requirements
+- What is a static website
+- Research on other ways in hosting a static content website apart from using compute Engine
+- Preferred method and reasons
+
+#### Action Plan
+
+#### What is a static website?
+A static content website simply means that the content you serve does not change in response to requests. Static websites are a good option for sites like blogs — where the page rarely changes after it has been published, or where there isn’t any dynamically-generated content. Static web pages can contain client-side technologies such as HTML, CSS, and JavaScript. They cannot contain dynamic content such as server-side scripts, like PHP.
+
+#### 3 other ways in hosting a static website in Google Cloud
+The 3 other ways of hosting a static website in Google Cloud include the following
+
+1. Google App Engine.
+2. Cloud Storage
+3. Firebase hosting
+
+#### Google App Engine
+You can use Google App Engine to host a static website. Static web pages can contain client-side technologies such as HTML, CSS, and JavaScript. Hosting your static site on App Engine can cost less than using a traditional hosting provider, as App Engine provides a free tier.
+
+Sites hosted on App Engine are hosted on the REGION_ID.r.appspot.com subdomain, such as [my-project-id].uc.r.appspot.com. After you deploy your site, you can map your own domain name to your App Engine-hosted website.
+
+Before you can host your website on Google App Engine: Create a new Google Cloud console project or retrieve the project ID of an existing project to use and then initialize the Google Cloud CLI
+
+
+#### Cloud Storage
+
+To host a static site in Cloud Storage, you need to create a Cloud Storage bucket, upload the content, and test your new site. You can serve your data directly from storage.googleapis.com, or you can verify that you own your domain and use your domain name. 
+
+If you have a web app that needs to serve static content or user-uploaded static media, using Cloud Storage can be a cost-effective and efficient way to host and serve this content, while reducing the amount of dynamic requests to your web app.
+
+Additionally, Cloud Storage can directly accept user-submitted content. This feature lets users upload large media files directly and securely without proxying through your servers.
+
+#### Firebase Hosting
+
+Firebase Hosting provides fast and secure static hosting for your web app. With Firebase Hosting, you can deploy web apps and static content to a global content-delivery network (CDN) by using a single command.
+
+Firebase production-grade hosting is backed by a global content delivery network (CDN). Hosting serves your content over SSL, by default, and can be used with your own custom domain or on your project's subdomains at no cost on web.app and firebaseapp.com.
+
+#### Preferred method and reasons
+
+Each of these methods can be used to successfully host a static website in Google Cloud depending on the given requirements. All the services have their advantages and disadvantages over others.
+
+However, on a personal preference, I would use Firebase hosting for my static website because of the following reasons 
+
+1. Firebase Hosting offers lightweight configuration options even if you are not too familiar with Google Cloud services comapared to the other two options.
+2. Firebase hosting is more cost effective and secure as it has a free tier plan where you connect your own domain name to Firebase Hosting and also provides an automatic zero configuration SSL certificate for your domain so all your content is served securely.
+3. Firebase hosting has end-to-end HTTPS serving compared to Cloud Storage which doesn't support end-to-end HTTPS for custom domains.
+4. Firebase hosting offers rapid deployment where you can use the Firebase CLI to get your app up and running in seconds with a one-click rollback feature to undo mistakes.
+
+
+## References
+
+https://cloud.google.com/security/best-practices
+
+https://cloud.google.com/compute/docs/create-linux-vm-instance
+
+https://cloud.google.com/compute/docs/tutorials/basic-webserver-apache
+
+https://cloud.google.com/storage/docs/hosting-static-website
+
+https://cloud.google.com/compute/docs/tutorials/high-availability-load-balancing
+
+https://cloud.google.com/sql/docs/mysql/high-availability
+
+https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
+
+https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
+
+https://success.outsystems.com/Documentation/11/Setup_and_maintain_your_OutSystems_infrastructure/Setting_Up_OutSystems/Possible_setups_for_an_OutSystems_infrastructure/High_availability_and_scalability_strategies
+
+https://cloud.google.com/compute/docs/tutorials/globally-autoscaling-a-web-service-on-compute-engine#console
+
+https://cloud.google.com/architecture/web-serving-overview#static-site
+
+https://firebase.google.com/docs/hosting/quickstart
+
+https://cloud.google.com/load-balancing/docs/https/ext-load-balancer-backend-buckets
+
+https://www.howtogeek.com/devops/how-to-host-a-high-performance-static-website-from-a-gcp-cloud-storage-bucket/
+
+https://console.cloud.google.com/marketplace/details/google-cloud-platform/firebase-hosting?project=divine-turbine-367720
+
+https://medium.com/google-cloud/hosting-a-static-website-on-google-cloud-using-google-cloud-storage-ddebcdcc8d5b
+
+https://cloud.google.com/appengine/docs/legacy/standard/python/getting-started/hosting-a-static-website
+
+https://www.websitebuilderinsider.com/what-are-the-advantages-of-hosting-static-website-on-google-cloud-storage/#:~:text=Security%3A%20Static%20websites%20are%20typically,or%20on%20a%20shared%20server.
+
+https://www.fizerkhan.com/blog/posts/free-static-page-hosting-on-google-app-engine-in-a-5-minutes
 
 
