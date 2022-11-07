@@ -141,7 +141,7 @@ You can use Google App Engine to host a static website. Static web pages can con
 
 Sites hosted on App Engine are hosted on the REGION_ID.r.appspot.com subdomain, such as [my-project-id].uc.r.appspot.com. After you deploy your site, you can map your own domain name to your App Engine-hosted website.
 
-Before you can host your website on Google App Engine: Create a new Google Cloud console project or retrieve the project ID of an existing project to use and then initialize the Google Cloud CLI
+Before you can host your website on Google App Engine: Create a new Google Cloud console project or retrieve the project ID of an existing project to use and then initialize the Google Cloud CLI.
 
 
 #### Cloud Storage
@@ -162,7 +162,7 @@ Firebase production-grade hosting is backed by a global content delivery network
 
 Each of these methods can be used to successfully host a static website in Google Cloud depending on the given requirements. All the services have their advantages and disadvantages over others.
 
-However, on a personal preference, I would use Firebase hosting for my static website because of the following reasons 
+However, on a personal preference, at the moment I would use Firebase hosting for my static website because of the following reasons 
 
 1. Firebase Hosting offers lightweight configuration options even if you are not too familiar with Google Cloud services comapared to the other two options.
 2. Firebase hosting is more cost effective and secure as it has a free tier plan where you connect your own domain name to Firebase Hosting and also provides an automatic zero configuration SSL certificate for your domain so all your content is served securely.
