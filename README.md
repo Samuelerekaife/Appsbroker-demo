@@ -1,7 +1,7 @@
 
 # Appsbroker Team Purple
 
-## Task 1 - Using Google Cloud  
+## Task 1 - Using Google Cloud Console 
 
 ### Create and Configure a Web Server on Google Cloud Platform
 
