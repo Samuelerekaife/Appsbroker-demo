@@ -56,6 +56,7 @@ A new command prompt opens and shows that you are connected to your VM terminal
 - In the Google Cloud console, go to the VM Instances page
 - To connect to the Linux VM you just created, click SSH in the row of the VM
 - To update the available packages and install the apache2 package, run the following commands
+
 sudo apt update
 
 sudo apt -y install apache2
